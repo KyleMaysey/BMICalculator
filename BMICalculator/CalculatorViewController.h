@@ -9,5 +9,18 @@
 #import <UIKit/UIKit.h>
 
 @interface CalculatorViewController : UIViewController
+{
+    BOOL isMetric;
+}
+
+@property (weak, nonatomic) IBOutlet UITextField *heightValue;
+@property (weak, nonatomic) IBOutlet UITextField *weightValue;
+@property (weak, nonatomic) IBOutlet UILabel *heightUnit;
+@property (weak, nonatomic) IBOutlet UILabel *weightUnit;
+
+
+-(IBAction)UnitToggle:(UISegmentedControl *)sender;
+-(IBAction)CalculateBMI:(UIButton *)sender;
+-(IBAction)ClearKeyboard:(UIButton *)sender;
 
 @end
