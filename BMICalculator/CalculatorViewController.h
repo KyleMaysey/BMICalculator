@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *weightValue;
 @property (weak, nonatomic) IBOutlet UILabel *heightUnit;
 @property (weak, nonatomic) IBOutlet UILabel *weightUnit;
+@property (weak, nonatomic) IBOutlet UILabel *bmiResult;
 
 
 -(IBAction)UnitToggle:(UISegmentedControl *)sender;

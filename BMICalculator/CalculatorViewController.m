@@ -14,6 +14,9 @@
 
 @implementation CalculatorViewController
 
+#define convertInchesToMetric .0254
+#define convertPoundsToMetric .453592
+
 -(IBAction)UnitToggle:(UISegmentedControl *)sender
 {
     //NSLog(@"Selected index: %d", [sender selectedSegmentIndex]);
@@ -24,12 +27,15 @@
         isMetric = YES;
         self.heightUnit.text = @"cm";
         self.weightUnit.text = @"kg";
+        
+        
     }
     else
     {
         isMetric = NO;
         self.heightUnit.text = @"inch";
         self.weightUnit.text = @"lbs";
+        
     }
 }
 
@@ -42,9 +48,19 @@
 -(IBAction)CalculateBMI:(UIButton *)sender
 {
     double BMIVal;
-    BMIVal = [self.weightValue.text doubleValue]/([self.heightValue.text doubleValue] * [self.heightValue.text doubleValue]);
     
-    NSLog(@"BMIValue: %f", BMIVal);
+    if (isMetric)
+    {
+        BMIVal = [self.weightValue.text doubleValue]/([self.heightValue.text doubleValue] * [self.heightValue.text doubleValue] * .0001);
+    }
+    else
+    {
+        BMIVal = ([self.weightValue.text doubleValue] * convertPoundsToMetric) / ([self.heightValue.text doubleValue] * convertInchesToMetric * [self.heightValue.text doubleValue] * convertInchesToMetric);
+    }
+    
+    self.bmiResult.text = [NSString stringWithFormat:@"%f", BMIVal];
+    
+    //NSLog(@"BMIValue: %f", BMIVal);
 }
 
 - (void)viewDidLoad
