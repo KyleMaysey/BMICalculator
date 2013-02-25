@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
     <scenes>
         <!--Calculator View Controller-->
@@ -34,6 +34,9 @@
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="09c-zS-hSG">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="fiV-BW-bWT"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Calculate">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -48,26 +51,13 @@
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vBn-ec-Bxo">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="301" id="Oez-UX-6Jd"/>
+                                    <constraint firstAttribute="height" constant="300" type="user" id="Oez-UX-6Jd"/>
                                     <constraint firstAttribute="width" constant="240" id="z8u-P0-0om"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nz0-pf-MWS">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Done">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="ClearKeyboard:" destination="2" eventType="touchUpInside" id="ajx-oZ-JhK"/>
-                                </connections>
-                            </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="637-oq-uXW">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="99" id="NKT-5y-gKD"/>
+                                    <constraint firstAttribute="width" constant="84" id="Z4s-94-ZaZ"/>
                                 </constraints>
                                 <segments>
                                     <segment title="US"/>
@@ -109,39 +99,36 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Nz0-pf-MWS" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="4kp-Xs-VWg"/>
-                            <constraint firstItem="Nz0-pf-MWS" firstAttribute="bottom" secondItem="wpA-3m-hsX" secondAttribute="bottom" type="default" id="60X-Q4-08b"/>
+                            <constraint firstAttribute="trailing" secondItem="637-oq-uXW" secondAttribute="trailing" constant="19" id="2vx-gz-mJb"/>
                             <constraint firstItem="WGf-5D-Wzy" firstAttribute="top" secondItem="3" secondAttribute="top" constant="62" id="6bQ-MZ-WQl"/>
                             <constraint firstItem="wpA-3m-hsX" firstAttribute="leading" secondItem="dAP-o1-bfs" secondAttribute="leading" type="default" id="9Cr-dt-mp6"/>
-                            <constraint firstItem="WvB-hI-8HG" firstAttribute="trailing" secondItem="wpA-3m-hsX" secondAttribute="trailing" type="default" id="D0F-yJ-Fvd"/>
+                            <constraint firstItem="vBn-ec-Bxo" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="9Yp-eE-kxQ"/>
+                            <constraint firstItem="vBn-ec-Bxo" firstAttribute="top" secondItem="3" secondAttribute="top" constant="158" id="9yy-il-Q1D"/>
+                            <constraint firstItem="WvB-hI-8HG" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="104" id="AY9-B0-iNx"/>
                             <constraint firstItem="ple-3A-Zvm" firstAttribute="top" secondItem="WGf-5D-Wzy" secondAttribute="top" type="default" id="Ebl-wR-cb2"/>
                             <constraint firstItem="xDy-G6-bXg" firstAttribute="top" secondItem="3" secondAttribute="top" constant="113" id="FWc-KI-A7i"/>
-                            <constraint firstItem="637-oq-uXW" firstAttribute="top" secondItem="3" secondAttribute="top" constant="107" id="Gf0-gd-BN0"/>
-                            <constraint firstItem="WGf-5D-Wzy" firstAttribute="leading" secondItem="249-pq-jSd" secondAttribute="leading" type="default" id="J4r-9Y-vRc"/>
+                            <constraint firstItem="dAP-o1-bfs" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="76" id="IEo-Pd-uC1"/>
                             <constraint firstItem="ple-3A-Zvm" firstAttribute="leading" secondItem="qYL-zb-Etg" secondAttribute="leading" type="default" id="K7i-JF-pgV"/>
-                            <constraint firstItem="09c-zS-hSG" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="MD2-z8-ztC"/>
-                            <constraint firstAttribute="trailing" secondItem="qYL-zb-Etg" secondAttribute="trailing" constant="85" id="MqV-CZ-V8P"/>
+                            <constraint firstItem="09c-zS-hSG" firstAttribute="top" secondItem="637-oq-uXW" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="KQg-ak-0s3"/>
                             <constraint firstItem="WGf-5D-Wzy" firstAttribute="trailing" secondItem="249-pq-jSd" secondAttribute="trailing" type="default" id="OJz-ZG-K6d"/>
-                            <constraint firstAttribute="trailing" secondItem="Nz0-pf-MWS" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="P7k-MT-0cU"/>
-                            <constraint firstItem="xDy-G6-bXg" firstAttribute="leading" secondItem="WGf-5D-Wzy" secondAttribute="leading" type="default" id="QaT-N2-BsS"/>
-                            <constraint firstItem="vBn-ec-Bxo" firstAttribute="top" secondItem="637-oq-uXW" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="TSj-p6-ebq"/>
+                            <constraint firstItem="WGf-5D-Wzy" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="PIZ-Gt-yaq"/>
+                            <constraint firstItem="249-pq-jSd" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Trq-ym-8cv"/>
                             <constraint firstItem="dAP-o1-bfs" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="YMC-5Y-pKC"/>
-                            <constraint firstItem="249-pq-jSd" firstAttribute="top" secondItem="3" secondAttribute="top" constant="24" id="YlN-K5-xtD"/>
-                            <constraint firstItem="xDy-G6-bXg" firstAttribute="baseline" secondItem="637-oq-uXW" secondAttribute="baseline" type="default" id="Z8g-Id-f6N"/>
+                            <constraint firstItem="249-pq-jSd" firstAttribute="top" secondItem="3" secondAttribute="top" constant="24" id="Yi9-Ew-C0K"/>
+                            <constraint firstItem="09c-zS-hSG" firstAttribute="top" secondItem="wpA-3m-hsX" secondAttribute="top" type="default" id="ZS3-K6-RZh"/>
                             <constraint firstItem="ple-3A-Zvm" firstAttribute="bottom" secondItem="WGf-5D-Wzy" secondAttribute="bottom" type="default" id="dVx-oH-CpM"/>
-                            <constraint firstItem="vBn-ec-Bxo" firstAttribute="centerX" secondItem="09c-zS-hSG" secondAttribute="centerX" type="default" id="dYE-dt-2lf"/>
-                            <constraint firstAttribute="trailing" secondItem="637-oq-uXW" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="dtu-Fr-suM"/>
                             <constraint firstItem="qYL-zb-Etg" firstAttribute="top" secondItem="249-pq-jSd" secondAttribute="top" type="default" id="i55-hS-YwC"/>
                             <constraint firstItem="wpA-3m-hsX" firstAttribute="top" secondItem="dAP-o1-bfs" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="lRd-oL-iEh"/>
                             <constraint firstItem="wpA-3m-hsX" firstAttribute="trailing" secondItem="dAP-o1-bfs" secondAttribute="trailing" type="default" id="n2J-ZZ-F86"/>
                             <constraint firstItem="WvB-hI-8HG" firstAttribute="baseline" secondItem="xDy-G6-bXg" secondAttribute="baseline" type="default" id="o3T-ht-ppi"/>
+                            <constraint firstItem="637-oq-uXW" firstAttribute="baseline" secondItem="249-pq-jSd" secondAttribute="baseline" type="default" id="odR-dC-Kc6"/>
                             <constraint firstItem="WvB-hI-8HG" firstAttribute="top" secondItem="xDy-G6-bXg" secondAttribute="top" type="default" id="rJw-Uc-2wD"/>
+                            <constraint firstAttribute="trailing" secondItem="qYL-zb-Etg" secondAttribute="trailing" constant="105" id="rlU-eg-WNt"/>
                             <constraint firstItem="ple-3A-Zvm" firstAttribute="trailing" secondItem="qYL-zb-Etg" secondAttribute="trailing" type="default" id="sLO-pF-euV"/>
-                            <constraint firstItem="637-oq-uXW" firstAttribute="leading" secondItem="WvB-hI-8HG" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="tAq-y4-mRy"/>
                             <constraint firstItem="dAP-o1-bfs" firstAttribute="baseline" secondItem="249-pq-jSd" secondAttribute="baseline" type="default" id="uKa-ix-d9X"/>
+                            <constraint firstItem="637-oq-uXW" firstAttribute="top" secondItem="3" secondAttribute="top" constant="7" id="v5q-Lj-iow"/>
                             <constraint firstItem="qYL-zb-Etg" firstAttribute="bottom" secondItem="249-pq-jSd" secondAttribute="bottom" type="default" id="vCy-jB-15P"/>
-                            <constraint firstItem="WvB-hI-8HG" firstAttribute="leading" secondItem="09c-zS-hSG" secondAttribute="leading" type="default" id="wNs-Gf-pyn"/>
-                            <constraint firstAttribute="bottom" secondItem="09c-zS-hSG" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="xVV-SZ-gpX"/>
+                            <constraint firstItem="637-oq-uXW" firstAttribute="trailing" secondItem="09c-zS-hSG" secondAttribute="trailing" type="default" id="wC2-Le-k3u"/>
                             <constraint firstItem="xDy-G6-bXg" firstAttribute="leading" secondItem="vBn-ec-Bxo" secondAttribute="leading" type="default" id="xbr-1h-rPf"/>
                         </constraints>
                     </view>
@@ -149,6 +136,7 @@
                         <outlet property="bmiResult" destination="WvB-hI-8HG" id="ihw-hw-ED5"/>
                         <outlet property="heightUnit" destination="qYL-zb-Etg" id="apB-pG-1kJ"/>
                         <outlet property="heightValue" destination="dAP-o1-bfs" id="FIZ-Z1-X3I"/>
+                        <outlet property="imageResult" destination="vBn-ec-Bxo" id="iI4-kE-aFq"/>
                         <outlet property="weightUnit" destination="ple-3A-Zvm" id="GhM-Sh-92x"/>
                         <outlet property="weightValue" destination="wpA-3m-hsX" id="EAJ-hr-nbA"/>
                     </connections>
@@ -162,11 +150,11 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CalculatorViewController.h"/>
             <relationships>
                 <relationship kind="action" name="CalculateBMI:" candidateClass="UIButton"/>
-                <relationship kind="action" name="ClearKeyboard:" candidateClass="UIButton"/>
                 <relationship kind="action" name="UnitToggle:" candidateClass="UISegmentedControl"/>
                 <relationship kind="outlet" name="bmiResult" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="heightUnit" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="heightValue" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="imageResult" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="weightUnit" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="weightValue" candidateClass="UITextField"/>
             </relationships>

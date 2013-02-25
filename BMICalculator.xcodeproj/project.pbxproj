@@ -18,6 +18,14 @@
 		9B7836A716D325DE004F4732 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B7836A616D325DE004F4732 /* Default-568h@2x.png */; };
 		9B7836AA16D325DE004F4732 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B7836A816D325DE004F4732 /* MainStoryboard.storyboard */; };
 		9B7836AD16D325DE004F4732 /* CalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7836AC16D325DE004F4732 /* CalculatorViewController.m */; };
+		9B87615616DBFB6700F56250 /* MildThin.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B87614E16DBFB6700F56250 /* MildThin.png */; };
+		9B87615716DBFB6700F56250 /* ModObes.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B87614F16DBFB6700F56250 /* ModObes.png */; };
+		9B87615816DBFB6700F56250 /* ModThin.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B87615016DBFB6700F56250 /* ModThin.png */; };
+		9B87615916DBFB6700F56250 /* Normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B87615116DBFB6700F56250 /* Normal.png */; };
+		9B87615A16DBFB6700F56250 /* Over.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B87615216DBFB6700F56250 /* Over.png */; };
+		9B87615B16DBFB6700F56250 /* SevereThin.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B87615316DBFB6700F56250 /* SevereThin.png */; };
+		9B87615C16DBFB6700F56250 /* SevObes.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B87615416DBFB6700F56250 /* SevObes.png */; };
+		9B87615D16DBFB6700F56250 /* VSevObes.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B87615516DBFB6700F56250 /* VSevObes.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +45,14 @@
 		9B7836A916D325DE004F4732 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		9B7836AB16D325DE004F4732 /* CalculatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorViewController.h; sourceTree = "<group>"; };
 		9B7836AC16D325DE004F4732 /* CalculatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorViewController.m; sourceTree = "<group>"; };
+		9B87614E16DBFB6700F56250 /* MildThin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MildThin.png; sourceTree = "<group>"; };
+		9B87614F16DBFB6700F56250 /* ModObes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ModObes.png; sourceTree = "<group>"; };
+		9B87615016DBFB6700F56250 /* ModThin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ModThin.png; sourceTree = "<group>"; };
+		9B87615116DBFB6700F56250 /* Normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Normal.png; sourceTree = "<group>"; };
+		9B87615216DBFB6700F56250 /* Over.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Over.png; sourceTree = "<group>"; };
+		9B87615316DBFB6700F56250 /* SevereThin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SevereThin.png; sourceTree = "<group>"; };
+		9B87615416DBFB6700F56250 /* SevObes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SevObes.png; sourceTree = "<group>"; };
+		9B87615516DBFB6700F56250 /* VSevObes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VSevObes.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +112,14 @@
 		9B78369716D325DE004F4732 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9B87614E16DBFB6700F56250 /* MildThin.png */,
+				9B87614F16DBFB6700F56250 /* ModObes.png */,
+				9B87615016DBFB6700F56250 /* ModThin.png */,
+				9B87615116DBFB6700F56250 /* Normal.png */,
+				9B87615216DBFB6700F56250 /* Over.png */,
+				9B87615316DBFB6700F56250 /* SevereThin.png */,
+				9B87615416DBFB6700F56250 /* SevObes.png */,
+				9B87615516DBFB6700F56250 /* VSevObes.png */,
 				9B78369816D325DE004F4732 /* BMICalculator-Info.plist */,
 				9B78369916D325DE004F4732 /* InfoPlist.strings */,
 				9B78369C16D325DE004F4732 /* main.m */,
@@ -164,6 +188,14 @@
 				9B7836A516D325DE004F4732 /* Default@2x.png in Resources */,
 				9B7836A716D325DE004F4732 /* Default-568h@2x.png in Resources */,
 				9B7836AA16D325DE004F4732 /* MainStoryboard.storyboard in Resources */,
+				9B87615616DBFB6700F56250 /* MildThin.png in Resources */,
+				9B87615716DBFB6700F56250 /* ModObes.png in Resources */,
+				9B87615816DBFB6700F56250 /* ModThin.png in Resources */,
+				9B87615916DBFB6700F56250 /* Normal.png in Resources */,
+				9B87615A16DBFB6700F56250 /* Over.png in Resources */,
+				9B87615B16DBFB6700F56250 /* SevereThin.png in Resources */,
+				9B87615C16DBFB6700F56250 /* SevObes.png in Resources */,
+				9B87615D16DBFB6700F56250 /* VSevObes.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +325,7 @@
 				9B7836B216D325DE004F4732 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
